@@ -10,6 +10,8 @@ const form = document.querySelector("#form")
 
 function clearErrors(){
     errorMessage.style.display = "none"
+    errorMessageShort.style.display="none"
+    doesNotMatch.style.display="none"
     passwordInput.style.border = "1px solid grey"
     passwordInput.style.outline = "none"
     confirmPassword.style.display = "1px solid grey"
