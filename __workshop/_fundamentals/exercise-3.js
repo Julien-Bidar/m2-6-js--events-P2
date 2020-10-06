@@ -19,7 +19,7 @@ const people = [
 
 function fullName(peopleArr) {
   let names = []
-  people.forEach((person) =>{
+  peopleArr.forEach((person) =>{
     if(person.name.middle !== undefined){
       names.push(`${person.name.first} ${person.name.middle} ${person.name.last}`);
     } else {

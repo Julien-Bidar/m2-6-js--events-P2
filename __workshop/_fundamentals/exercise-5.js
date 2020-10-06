@@ -86,10 +86,17 @@ const staffMembers = [
 ];
 
 const getData = (arr, key, val) => {
-  // return something
+  let result = []
+  arr.forEach((person) => {
+    if(person.skillLevels[key] >= val || person[key] === val){
+      result.push(person)
+    }
+  })
+  return result
 };
 
 // 2. Do a console.log to verify your function.
+console.log(getData(staffMembers, javascript, 5))
 
 // 3. Run the test to validate: yarn test exercise-5
 

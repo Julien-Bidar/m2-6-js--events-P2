@@ -3,12 +3,84 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+  href="https://fonts.googleapis.com/css?family=Jost:400,700&display=swap"
+  rel="stylesheet"/>
     <link href="style.css" rel="stylesheet" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
     <title>Signup Form</title>
   </head>
   <body>
+    <form action="#">
+      <div id="wrapper" class="wrapper">
+        <div id="signup-form" class="div-signup">
+          <h1>Signup Form</h1>
+        </div>
+  
+        <div id="full-name-div" class="div-text-input">
+          <label id="full-name-label" class="label" for="full-name-input">
+            Full name:
+          </label>
+          <input required id="full-name-input" class="input" type="text"/>
+        </div>
+  
+        <div id="street-address-div" class="div-text-input">
+          <label id="street-address-label" class="label" for="street-address-input">
+            Street address:
+          </label>
+          <input id="street-address-input" class="input" type="text" required/>
+        </div>
+  
+        <div id="email-address-div" class="div-text-input">
+          <label id="email-address-label" class="label" for="email-address-input">
+            Email address:
+          </label>
+          <input id="email-address-input" class="input" type="email" required/>
+        </div>
+  
+        <div id="phone-number-div" class="div-text-input">
+          <label id="phone-number-label" class="label" for="phone-number-input">
+          Phone number:
+          </label>
+          <input id="phone-number-input" class="input" type="tel" required/>
+        </div>
+  
+        <div id="password-div" class="div-text-input">
+          <label id="password-label" class="label" for="password-input">
+            Password:
+          </label>
+          <input id="password-input" class="input" type="password" required/>
+        </div>
+  
+        <div id="confirm-password-div" class="div-text-input">
+          <label id="confirm-password-label" class="label" for="confirm-password-input">
+            Confirm password:
+          </label>
+          <input id="confirm-password-input" class="input" type="password" required/>
+        </div>
+
+        <div id="error-message" class="error-message">
+          <p id="do-not-match" class="do-not-match">Your confirming password does not match your password</p>
+          <p id="too-short" class="too-short">Your password is too short! please provide a password that is at least 10 characters long.</p>
+        </div>
+  
+        <div id="terms-div" class="terms-div">
+          <input id="terms-input" class="terms-input" type="checkbox" value="terms of service"/>
+          <label id="terms-label" class="terms-label" for="terms-input">
+            I agree to the <a href="#">terms of service</a>
+          </label>
+        </div>
+  
+        <div class="footer">
+          <footer>
+            <button id="clear" class="clear" type="reset">Clear</button>
+            <button id="submit" class="submit" type="submit">Submit</button>
+          </footer>
+        </div>
+    </form>
+
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
